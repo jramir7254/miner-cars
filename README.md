@@ -55,9 +55,7 @@ Responsible for the vehicle system, inventory, browsing, and purchases.
 - SUV.java
 - Hatchback.java
 - Pickup.java
-  CarManager.java (additional class)
-  Responsibilities:
-  Create the abstract Car class and its subclasses.
+- CarManager.java (additional class)
 
 ## Implement car attributes:
 
@@ -73,17 +71,18 @@ Responsible for the vehicle system, inventory, browsing, and purchases.
 - VIN
 - Price
 - Availability
-  Implement displaying all available cars.
-  Implement filtering cars by ID, type, condition, and price.
-  Implement purchasing cars.
-  Update customer budgets after purchases.
-  Update vehicle inventory.
-  Implement admin car management:
-  Add cars
-  View/search cars
-  Update cars
-  Delete cars
-  Read and save car information to files.
+- Implement displaying all available cars.
+- Implement filtering cars by ID, type, condition, and price.
+- Implement purchasing cars.
+- Update vehicle inventory.
+
+## Implement admin car management:
+
+- Add cars
+- View/search cars
+- Update cars
+- Delete cars
+- Read and save car information to files.
 
 ---
 

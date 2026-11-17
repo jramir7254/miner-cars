@@ -11,4 +11,9 @@ public class Diesel extends Fuel {
     public Diesel() {
     }
 
+    @Override
+    public String toString() {
+        return "Diesel";
+    }
+
 }
