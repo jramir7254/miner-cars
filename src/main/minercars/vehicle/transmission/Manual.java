@@ -11,14 +11,4 @@ public class Manual extends Transmission {
     public Manual() {
     }
 
-    /**
-     * Returns the display name {@code "Manual"}.
-     *
-     * @return {@code "Manual"}
-     */
-    @Override
-    public String getName() {
-        return "Manual";
-    }
-
 }

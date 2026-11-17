@@ -11,13 +11,4 @@ public class Diesel extends Fuel {
     public Diesel() {
     }
 
-    /**
-     * Returns the display name {@code "Diesel"}.
-     *
-     * @return {@code "Diesel"}
-     */
-    @Override
-    public String getName() {
-        return "Diesel";
-    }
 }

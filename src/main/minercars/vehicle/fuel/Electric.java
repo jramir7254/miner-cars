@@ -11,13 +11,4 @@ public class Electric extends Fuel {
     public Electric() {
     }
 
-    /**
-     * Returns the display name {@code "Electric"}.
-     *
-     * @return {@code "Electric"}
-     */
-    @Override
-    public String getName() {
-        return "Electric";
-    }
 }

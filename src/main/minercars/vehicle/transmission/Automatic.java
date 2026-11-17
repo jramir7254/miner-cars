@@ -11,13 +11,4 @@ public class Automatic extends Transmission {
     public Automatic() {
     }
 
-    /**
-     * Returns the display name {@code "Automatic"}.
-     *
-     * @return {@code "Automatic"}
-     */
-    @Override
-    public String getName() {
-        return "Automatic";
-    }
 }

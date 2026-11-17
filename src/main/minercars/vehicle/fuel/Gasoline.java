@@ -11,13 +11,4 @@ public class Gasoline extends Fuel {
     public Gasoline() {
     }
 
-    /**
-     * Returns the display name {@code "Gasoline"}.
-     *
-     * @return {@code "Gasoline"}
-     */
-    @Override
-    public String getName() {
-        return "Gasoline";
-    }
 }
