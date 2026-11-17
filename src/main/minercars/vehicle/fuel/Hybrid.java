@@ -18,4 +18,8 @@ public class Hybrid extends Fuel {
         this.gasoline = new Gasoline();
     }
 
+    @Override
+    public String toString() {
+        return "Hybrid";
+    }
 }

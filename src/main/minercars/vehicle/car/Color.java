@@ -19,8 +19,19 @@ public enum Color {
     /** Black. */
     BLACK("Black");
 
-    Color(String string) {
-        //TODO Auto-generated constructor stub
+    private final String name;
+
+    Color(String name) {
+        this.name = name;
     }
 
+    /** Returns the color matching the given text, ignoring case. */
+    public static Color fromString(String text) {
+        return valueOf(text.trim().toUpperCase());
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

@@ -11,4 +11,8 @@ public class Electric extends Fuel {
     public Electric() {
     }
 
+    @Override
+    public String toString() {
+        return "Electric";
+    }
 }

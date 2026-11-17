@@ -7,4 +7,15 @@ package minercars.vehicle.transmission;
  */
 public abstract class Transmission {
 
+    /** Returns the transmission object matching the given text, ignoring case. */
+    public static Transmission fromString(String text) {
+        switch (text.trim().toLowerCase()) {
+            case "automatic":
+                return new Automatic();
+            case "manual":
+                return new Manual();
+            default:
+                throw new IllegalArgumentException("Unknown transmission: " + text.trim());
+        }
+    }
 }

@@ -10,4 +10,19 @@ package minercars.vehicle.fuel;
  */
 public abstract class Fuel {
 
+    /** Returns the fuel object matching the given text, ignoring case. */
+    public static Fuel fromString(String text) {
+        switch (text.trim().toLowerCase()) {
+            case "gasoline":
+                return new Gasoline();
+            case "diesel":
+                return new Diesel();
+            case "electric":
+                return new Electric();
+            case "hybrid":
+                return new Hybrid();
+            default:
+                throw new IllegalArgumentException("Unknown fuel type: " + text.trim());
+        }
+    }
 }

@@ -4,12 +4,24 @@ package minercars.vehicle.car;
  * Condition of a car in the inventory: brand new or used.
  */
 public enum Condition {
-    /** A brand-new car. */
+    /** New. */
     NEW("New"),
-    /** A previously owned car. */
+    /** Used. */
     USED("Used");
 
-    Condition(String string) {
-        //TODO Auto-generated constructor stub
+    private final String name;
+
+    Condition(String name) {
+        this.name = name;
+    }
+
+    /** Returns the condition matching the given text, ignoring case. */
+    public static Condition fromString(String text) {
+        return valueOf(text.trim().toUpperCase());
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

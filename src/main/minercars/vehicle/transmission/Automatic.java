@@ -11,4 +11,8 @@ public class Automatic extends Transmission {
     public Automatic() {
     }
 
+    @Override
+    public String toString() {
+        return "Automatic";
+    }
 }
