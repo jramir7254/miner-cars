@@ -11,4 +11,8 @@ public class Gasoline extends Fuel {
     public Gasoline() {
     }
 
+    @Override
+    public String toString() {
+        return "Gasoline";
+    }
 }

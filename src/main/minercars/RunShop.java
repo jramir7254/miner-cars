@@ -9,6 +9,7 @@ import minercars.vehicle.car.Color;
 import minercars.vehicle.car.Condition;
 import minercars.vehicle.car.SUV;
 import minercars.vehicle.fuel.Diesel;
+import minercars.vehicle.fuel.Fuel;
 import minercars.vehicle.transmission.Manual;
 
 public class RunShop {
@@ -19,6 +20,7 @@ public class RunShop {
                 "IUEHWIUFH(83y98f98", 20.69);
         System.out.println(shitbox1.hashCode());
         System.out.println(shitbox2.hashCode());
+
         // String filePath = "data/car_data.csv";
         // String line;
 

@@ -13,8 +13,6 @@ public class Manual extends Transmission {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return "Manual";
     }
-
 }

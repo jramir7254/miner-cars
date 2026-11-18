@@ -34,9 +34,10 @@ public class Hatchback extends Car {
             Fuel fuelType,
             Transmission transmission,
             String vin,
-            double price //
+            double price,
+            int carsAvailable //
     ) {
-        super(id, model, condition, color, capacity, mileage, fuelType, transmission, vin, price);
+        super(id, model, condition, color, capacity, mileage, fuelType, transmission, vin, price, carsAvailable);
     }
 
     @Override

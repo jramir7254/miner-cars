@@ -15,5 +15,4 @@ public class Diesel extends Fuel {
     public String toString() {
         return "Diesel";
     }
-
 }

@@ -5,59 +5,24 @@ package minercars.vehicle.car;
  * @author Jesus Ramirez
  */
 public enum Condition {
-    /** A brand-new car. */
+    /** New. */
     NEW("New"),
-    /** A previously owned car. */
+    /** Used. */
     USED("Used");
 
-    /** Name shown to users and written to the cars file. */
-    private final String displayName;
+    private final String name;
 
-    /**
-     * Creates a condition constant.
-     *
-     * @param displayName the name shown to users and written to the cars file
-     */
-    Condition(String displayName) {
-        this.displayName = displayName;
+    Condition(String name) {
+        this.name = name;
     }
 
-    /**
-     * Returns the name shown to users and written to the cars file.
-     *
-     * @return the display name, e.g. {@code "Used"}
-     */
-    public String getDisplayName() {
-        return displayName;
-    }
-
-    /**
-     * Finds the condition matching the given text, ignoring case and surrounding whitespace.
-     *
-     * @param text the condition name, e.g. {@code "new"}
-     * @return the matching condition
-     * @throws IllegalArgumentException if {@code text} is {@code null} or not a known condition
-     */
+    /** Returns the condition matching the given text, ignoring case. */
     public static Condition fromString(String text) {
-        if (text != null) {
-            String trimmed = text.trim();
-            for (Condition condition : values()) {
-                if (condition.displayName.equalsIgnoreCase(trimmed)) {
-                    return condition;
-                }
-            }
-        }
-        throw new IllegalArgumentException("Unknown condition: \"" + (text == null ? "" : text.trim())
-                + "\". Valid conditions are New, Used.");
+        return valueOf(text.trim().toUpperCase());
     }
 
-    /**
-     * Returns the display name of this condition.
-     *
-     * @return the display name
-     */
     @Override
     public String toString() {
-        return displayName;
+        return name;
     }
 }
